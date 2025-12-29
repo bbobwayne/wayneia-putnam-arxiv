@@ -1,0 +1,77 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[DeepSeek-AI(2025)]{deepseek2025proverv2}
+DeepSeek-AI.
+\newblock Deepseek-prover-v2: Advancing neural theorem proving via recursive
+  proof search and reinforcement learning.
+\newblock \url{https://github.com/deepseek-ai/DeepSeek-Prover-V2}, 2025.
+\newblock April 2025.
+
+\bibitem[Hong et~al.(2023)Hong, Zhuge, Chen, Zheng, Cheng, Zhang, Wang, Wang,
+  Bang, et~al.]{hong2023metagpt}
+Sirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng, Ceyao
+  Zhang, Jinlin Wang, Zili Wang, Steven Ka~Shing Bang, et~al.
+\newblock Metagpt: Meta programming for a multi-agent collaborative framework.
+\newblock \emph{arXiv preprint arXiv:2308.00352}, 2023.
+
+\bibitem[Kedlaya et~al.(2002)Kedlaya, Poonen, and Vakil]{kedlaya2002putnam}
+Kiran~S Kedlaya, Bjorn Poonen, and Ravi Vakil.
+\newblock \emph{The William Lowell Putnam Mathematical Competition 1985-2000:
+  Problems, Solutions, and Commentary}.
+\newblock Mathematical Association of America, 2002.
+
+\bibitem[Lin et~al.(2024)Lin, Yang, Li, et~al.]{goedelprover2024}
+Yuntao Lin, Zhengying Yang, Zhengyuan Li, et~al.
+\newblock Goedel-prover: A frontier model for open-domain automated theorem
+  proving, 2024.
+
+\bibitem[Polu and Sutskever(2020)]{polu2020gpt}
+Stanislas Polu and Ilya Sutskever.
+\newblock Generative language modeling for automated theorem proving.
+\newblock \emph{arXiv preprint arXiv:2009.03393}, 2020.
+
+\bibitem[Shinn et~al.(2023)Shinn, Cassano, Gopinath, Narasimhan, and
+  Yao]{shinn2023reflexion}
+Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, and Shunyu
+  Yao.
+\newblock Reflexion: Language agents with verbal reinforcement learning.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2023.
+
+\bibitem[Trinh et~al.(2024)Trinh, Wu, Le, He, and Luong]{alphageometry2024}
+Trieu~H Trinh, Yuhuai Wu, Quoc~V Le, He~He, and Thang Luong.
+\newblock Solving olympiad geometry without human demonstrations, 2024.
+
+\bibitem[Tsoukalas et~al.(2024)Tsoukalas, Lee, Jennings, Xin, Ding, Jennings,
+  Thakur, and Chaudhuri]{tsoukalas2024putnambench}
+George Tsoukalas, Jasper Lee, John Jennings, Jimmy Xin, Michelle Ding, Michael
+  Jennings, Amitayush Thakur, and Swarat Chaudhuri.
+\newblock Putnambench: Evaluating neural theorem-provers on the putnam
+  mathematical competition, 2024.
+
+\bibitem[Wu et~al.(2023)Wu, Bansal, Zhang, Wu, Li, Zhu, Jiang, Zhang, Zhang,
+  Liu, et~al.]{wu2023autogen}
+Qingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu,
+  Li~Jiang, Xiaoyun Zhang, Shaokun Zhang, Jiale Liu, et~al.
+\newblock Autogen: Enabling next-gen llm applications via multi-agent
+  conversation.
+\newblock \emph{arXiv preprint arXiv:2308.08155}, 2023.
+
+\bibitem[Zheng et~al.(2022)Zheng, Han, and Polu]{zheng2021minif2f}
+Kunhao Zheng, Jesse~Michael Han, and Stanislas Polu.
+\newblock Minif2f: A cross-system benchmark for formal olympiad-level
+  mathematics.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+
+\bibitem[Zhou et~al.(2023)Zhou, Yan, Shlapentokh-Rothman, Wang, and
+  Wang]{zhou2023lats}
+Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, and Yu-Xiong Wang.
+\newblock Language agent tree search unifies reasoning acting and planning in
+  language models.
+\newblock \emph{arXiv preprint arXiv:2310.04406}, 2023.
+
+\end{thebibliography}
