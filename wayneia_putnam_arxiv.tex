@@ -114,7 +114,7 @@ WayneIA employs a distributed multi-agent architecture coordinated through CODE\
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/png/fig1_architecture.png}
+\includegraphics[width=0.95\textwidth]{figures/fig1_architecture.png}
 \caption{WayneIA System Architecture with CODE\_KEY[220] Universal Language Transformer. The multi-level design includes: Input Layer (mathematical statement intake), Reasoning Router (task complexity analysis), Universal Language Transformer (multi-language encoding), Agent Swarm (7 production agents, 147KB total), and Output Layer (verified formal proofs).}
 \label{fig:architecture}
 \end{figure}
@@ -285,6 +285,13 @@ Pi-5 MCM & Hailo-8 (26 TOPS) & Edge Inference & 26 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/fig7_infrastructure.png}
+\caption{84 TOPS Distributed Ecosystem Architecture. Three nodes coordinate via the PPWHH protocol: WaynePC (Quantum API, dual GPU), WindowsPC (32 TOPS via 8x Coral TPU), and Pi-5 MCM (26 TOPS Hailo-8 edge inference). Context compression achieves 99.2\% efficiency with $<$50ms hot-handoff latency.}
+\label{fig:infrastructure}
+\end{figure}
 
 The PPWHH (Parallel Pre-Warm Hot-Handoff) protocol coordinates inference across nodes, described in Section~\ref{sec:ppwhh}.
 
@@ -552,6 +559,13 @@ Timeout & 29 & 5\% & Exceeded 60s verification limit \\
 \textbf{Key Insight}: Tactic synthesis failures (40\%) represent the largest improvement opportunity. These cases demonstrate correct high-level proof structure but fail during fine-grained tactic selection---a target for future reinforcement learning integration.
 
 \textbf{Language-Specific Patterns}: Coq exhibits higher type mismatch rates (14\% vs 8\% average) due to its stricter dependent type system. Isabelle's Sledgehammer reduces tactic synthesis failures to 32\%, explaining its superior overall performance.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig8_confidence.png}
+\caption{Confidence Score Distribution Across Problem Categories. Box plots show model confidence scores (1-7 scale) for each category, with success rates indicated. Higher-performing categories (Probability, Number Theory) exhibit lower variance, suggesting more consistent reasoning patterns.}
+\label{fig:confidence}
+\end{figure}
 
 \subsection{Future Work}
 
