@@ -239,7 +239,7 @@ CodeKey Cipher Transformer & [24] & 22KB & Cipher parsing and orchestration \\
 Quantum Decision Engine & [23] & 19KB & Resource allocation optimization \\
 Reasoning Router & [24] & 18KB & Task-to-strategy routing \\
 Fractal Dispatcher & [104] & 17KB & Recursive task decomposition \\
-Ecosystem Integration & [115] & 15KB & 84 TOPS coordination \\
+Ecosystem Integration & [115] & 15KB & 58 TOPS coordination \\
 \midrule
 \textbf{Total} & & \textbf{147KB} & \\
 \bottomrule
@@ -265,13 +265,13 @@ Strategy selection follows the complexity estimation:
 
 where $\alpha=0.3$, $\beta=0.4$, $\gamma=0.3$ based on empirical tuning.
 
-\subsection{Infrastructure: 84 TOPS Distributed Computing}
+\subsection{Infrastructure: 58 TOPS Distributed Computing}
 
 WayneIA operates on a heterogeneous distributed computing infrastructure:
 
 \begin{table}[h]
 \centering
-\caption{84 TOPS Distributed Infrastructure}
+\caption{58 TOPS Distributed Infrastructure}
 \label{tab:infrastructure}
 \begin{tabular}{@{}lllr@{}}
 \toprule
@@ -281,7 +281,7 @@ WaynePC & RTX 4070 SUPER + RTX 3080 & Quantum API & GPU \\
 WindowsPC & RTX 3070 + 8$\times$ Coral TPU & Benchmark Execution & 32 \\
 Pi-5 MCM & Hailo-8 (26 TOPS) & Edge Inference & 26 \\
 \midrule
-\textbf{Total} & & & \textbf{84+} \\
+\textbf{Total} & & & \textbf{58} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -289,7 +289,7 @@ Pi-5 MCM & Hailo-8 (26 TOPS) & Edge Inference & 26 \\
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/fig7_infrastructure.png}
-\caption{84 TOPS Distributed Ecosystem Architecture. Three nodes coordinate via the PPWHH protocol: WaynePC (Quantum API, dual GPU), WindowsPC (32 TOPS via 8x Coral TPU), and Pi-5 MCM (26 TOPS Hailo-8 edge inference). Context compression achieves 99.2\% efficiency with $<$50ms hot-handoff latency.}
+\caption{58 TOPS Distributed Ecosystem Architecture. Three nodes coordinate via the PPWHH protocol: WaynePC (Quantum API, dual GPU), WindowsPC (32 TOPS via 8x Coral TPU), and Pi-5 MCM (26 TOPS Hailo-8 edge inference). Context compression achieves 99.2\% efficiency with $<$50ms hot-handoff latency.}
 \label{fig:infrastructure}
 \end{figure}
 
@@ -316,7 +316,7 @@ The protocol dispatches proof attempts across nodes using a work-stealing schedu
 \text{dispatch}(s, L) = \bigl\{(\text{node}_i, l_i) : l_i \in L, \text{load}(\text{node}_i) < \tau\bigr\}
 \end{equation}
 
-where $\tau$ is the load threshold (default 0.8). This enables concurrent evaluation across all three formal languages with 84+ TOPS aggregate throughput.
+where $\tau$ is the load threshold (default 0.8). This enables concurrent evaluation across all three formal languages with 58 TOPS aggregate throughput.
 
 \subsubsection{Hot-Handoff Phase}
 When a proof succeeds on one language, insights transfer to other nodes via compressed context:
@@ -582,7 +582,7 @@ We present WayneIA, a general-purpose AGI system achieving 5.0\% accuracy on Put
 
 With a 3025\% improvement over GPT-4o and 68.6\% of state-of-the-art performance, WayneIA demonstrates that general-purpose AGI can approach specialized theorem prover capability while maintaining cross-domain validation across software engineering (42.33\%), function calling (69.28\%), agent tasks (46.5\%), and edge inference (1190 img/s).
 
-Our CODE\_KEY composition algebra and distributed multi-agent architecture (35+ agents, 84 TOPS, 99.2\% context compression) provide a framework for scalable formal reasoning that extends beyond single-benchmark optimization.
+Our CODE\_KEY composition algebra and distributed multi-agent architecture (35+ agents, 58 TOPS, 99.2\% context compression) provide a framework for scalable formal reasoning that extends beyond single-benchmark optimization.
 
 \section*{Reproducibility}
 
