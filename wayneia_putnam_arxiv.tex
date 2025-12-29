@@ -156,38 +156,44 @@ This specifies: Reasoning Router [24] $\rightarrow$ Fractal Dispatcher [104] $\r
 
 The Universal Language Transformer enables simultaneous formal reasoning across heterogeneous proof assistants. Algorithm~\ref{alg:ult} describes the transformation pipeline.
 
-\begin{algorithm}
+\begin{algorithm}[H]
 \caption{Universal Language Transformation Pipeline}
 \label{alg:ult}
 \begin{algorithmic}[1]
-\REQUIRE Mathematical statement $s$, target languages $L = \{\text{Lean4}, \text{Isabelle}, \text{Coq}\}$
+\REQUIRE Mathematical statement $s$, target languages $\mathcal{L} = \{\text{Lean4}, \text{Isabelle}, \text{Coq}\}$
 \ENSURE Set of verified formal proofs $\mathcal{P}$
+
+\STATE
 \STATE \textbf{// Phase 1: Statement Analysis and Encoding}
 \STATE $\text{complexity} \leftarrow \text{ANALYZE\_COMPLEXITY}(s)$
-\STATE $\text{strategy} \leftarrow \text{SELECT\_STRATEGY}(\text{complexity})$ \COMMENT{CLASSICAL/REFLEXION/LATS/HYBRID}
+\STATE $\text{strategy} \leftarrow \text{SELECT\_STRATEGY}(\text{complexity})$
+\COMMENT{CLASSICAL/REFLEXION/LATS/HYBRID}
 \STATE $\text{concepts} \leftarrow \text{EXTRACT\_CONCEPTS}(s)$
 \STATE $\text{encoded} \leftarrow \text{FORMAL\_ENCODE}_{[210]}(s, \text{concepts})$
+
 \STATE
 \STATE \textbf{// Phase 2: Parallel Multi-Language Transformation}
 \STATE $\mathcal{P} \leftarrow \emptyset$
-\FOR{$l \in L$ \textbf{in parallel}}
+\FORALL{$l \in \mathcal{L}$ \textbf{in parallel}}
     \STATE $\text{template} \leftarrow \text{GET\_LANGUAGE\_TEMPLATE}(l)$
     \STATE $\text{tactics} \leftarrow \text{SELECT\_TACTICS}(l, \text{strategy})$
-    \STATE $\text{proof}_{l} \leftarrow \text{GENERATE\_PROOF}(\text{encoded}, \text{template}, \text{tactics})$
+    \STATE $\text{proof}_l \leftarrow \text{GENERATE\_PROOF}(\text{encoded}, \text{template}, \text{tactics})$
     \IF{$\text{strategy} = \text{REFLEXION}$}
-        \STATE $\text{proof}_{l} \leftarrow \text{SELF\_REFINE}(\text{proof}_{l}, \text{max\_iter}=3)$
+        \STATE $\text{proof}_l \leftarrow \text{SELF\_REFINE}(\text{proof}_l, \text{max\_iter} = 3)$
     \ENDIF
-    \STATE $\mathcal{P} \leftarrow \mathcal{P} \cup \{(l, \text{proof}_{l})\}$
+    \STATE $\mathcal{P} \leftarrow \mathcal{P} \cup \{(l, \text{proof}_l)\}$
 \ENDFOR
+
 \STATE
 \STATE \textbf{// Phase 3: Verification and Collection}
 \STATE $\mathcal{V} \leftarrow \emptyset$
-\FOR{$(l, p) \in \mathcal{P}$}
+\FORALL{$(l, p) \in \mathcal{P}$}
     \STATE $\text{result} \leftarrow \text{PROOF\_VERIFY}_{[214]}(p, l)$
-    \IF{$\text{result.valid}$}
-        \STATE $\mathcal{V} \leftarrow \mathcal{V} \cup \{(l, p, \text{result.time})\}$
+    \IF{$\text{result}.\text{valid}$}
+        \STATE $\mathcal{V} \leftarrow \mathcal{V} \cup \{(l, p, \text{result}.\text{time})\}$
     \ENDIF
 \ENDFOR
+
 \RETURN $\mathcal{V}$
 \end{algorithmic}
 \end{algorithm}
