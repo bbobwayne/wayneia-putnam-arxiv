@@ -1,0 +1,113 @@
+<mxfile host="app.diagrams.net" modified="2025-12-29T19:00:00.000Z" agent="WayneIA" etag="wayneia-arch" version="22.1.0" type="device">
+  <diagram id="wayneia-architecture" name="WayneIA System Architecture">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="title" value="WayneIA System Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a1a;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Input Layer -->
+        <mxCell id="input" value="&lt;b&gt;Problem Input&lt;/b&gt;&lt;br&gt;Putnam Competition Problems&lt;br&gt;(600 problems, 1985-2023)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="200" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- CODE_KEY Layer -->
+        <mxCell id="codekey-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="800" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="codekey-label" value="CODE_KEY Composition Layer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="185" width="200" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Reasoning Router -->
+        <mxCell id="router" value="&lt;b&gt;Reasoning Router&lt;/b&gt;&lt;br&gt;CODE_KEY[210]&lt;br&gt;&lt;br&gt;Problem Classification&lt;br&gt;Strategy Selection&lt;br&gt;+1.16% contribution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="160" height="140" as="geometry"/>
+        </mxCell>
+        
+        <!-- Fractal Dispatcher -->
+        <mxCell id="fractal" value="&lt;b&gt;Fractal Dispatcher&lt;/b&gt;&lt;br&gt;CODE_KEY[211]&lt;br&gt;&lt;br&gt;Multi-Scale Decomposition&lt;br&gt;Parallel Proof Search&lt;br&gt;+0.84% contribution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="220" width="160" height="140" as="geometry"/>
+        </mxCell>
+        
+        <!-- Self-Evolving -->
+        <mxCell id="evolving" value="&lt;b&gt;Self-Evolving&lt;/b&gt;&lt;br&gt;CODE_KEY[212]&lt;br&gt;&lt;br&gt;Strategy Adaptation&lt;br&gt;Error Correction&lt;br&gt;+0.66% contribution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="220" width="160" height="140" as="geometry"/>
+        </mxCell>
+        
+        <!-- Universal Language -->
+        <mxCell id="universal" value="&lt;b&gt;Universal Language&lt;/b&gt;&lt;br&gt;CODE_KEY[220]&lt;br&gt;&lt;br&gt;Cross-Prover Translation&lt;br&gt;Semantic Preservation&lt;br&gt;+1.67% contribution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="720" y="220" width="160" height="140" as="geometry"/>
+        </mxCell>
+        
+        <!-- Proof Assistant Layer -->
+        <mxCell id="isabelle" value="&lt;b&gt;Isabelle&lt;/b&gt;&lt;br&gt;6.5% (13/200)&lt;br&gt;Primary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="420" width="140" height="70" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="lean4" value="&lt;b&gt;Lean 4&lt;/b&gt;&lt;br&gt;4.5% (9/200)&lt;br&gt;Secondary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="430" y="420" width="140" height="70" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="coq" value="&lt;b&gt;Coq&lt;/b&gt;&lt;br&gt;4.0% (8/200)&lt;br&gt;Tertiary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="710" y="420" width="140" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Output Layer -->
+        <mxCell id="output" value="&lt;b&gt;Verified Proof Output&lt;/b&gt;&lt;br&gt;30/600 Problems Solved (5.0%)&lt;br&gt;+3025% vs GPT-4o Baseline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0066cc;strokeColor=#004c99;strokeWidth=2;fontSize=11;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="530" width="300" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="input" target="codekey-box">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#388e3c;" edge="1" parent="1" source="router" target="isabelle">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1976d2;" edge="1" parent="1" source="fractal" target="lean4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#f57c00;" edge="1" parent="1" source="universal" target="coq">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066cc;entryX=0.5;entryY=0;" edge="1" parent="1" source="isabelle" target="output">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="220" y="510"/><mxPoint x="500" y="510"/></Array></mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066cc;" edge="1" parent="1" source="lean4" target="output">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066cc;entryX=0.5;entryY=0;" edge="1" parent="1" source="coq" target="output">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="780" y="510"/><mxPoint x="500" y="510"/></Array></mxGeometry>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#cccccc;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="540" width="150" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-title" value="&lt;b&gt;Legend&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="545" width="60" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend1" value="Input/Output" style="text;html=1;strokeColor=none;fillColor=#fff2cc;align=left;verticalAlign=middle;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="760" y="562" width="80" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend2" value="CODE_KEY" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=left;verticalAlign=middle;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="760" y="580" width="80" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend3" value="Proof Assistants" style="text;html=1;strokeColor=none;fillColor=#c8e6c9;align=left;verticalAlign=middle;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="760" y="598" width="80" height="15" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
